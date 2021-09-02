@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplos de inputs em formulários</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form method="POST">
+		<label for="tx-usuario">Usuário:</label><br>
+		<input type="text" name="usuario" id="tx-usuario"><br>
+
+		<label for="tx-senha">Senha:</label><br>
+		<input type="password" name="senha" id="tx-senha"><br>
+
+		<label for="ta-mensagem">Mensagem:</label> <br>
+		<textarea name="mensagem" id="ta-mensagem" rows="10" cols="30"></textarea> <br>
+
+		<label for="se-disciplina">Escolha a disciplina do seu interesse:</label> <br>
+		<select name="disciplina" id="se-disciplina">
+			<option>Desenvolvimento Web</option>
+			<option>Programação Orientada a Objetos</option>
+			<option>Banco de dados</option>
+		</select>
+		<br>
+
+		<label for="se-estado">Estado:</label><br>
+		<select name="estado" id="se-estado">
+			<option value="AL">Alagoas</option>
+			<option value="DF">Distrito Federal</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="SP" selected>São Paulo</option>
+			<option value="TO">Tocantins</option>
+		</select>
+		<br>
+
+		Selecione suas disciplinas favoritas: <br>
+		<input type="checkbox" name="disciplinas-favoritas" id="cb-devweb" value="WEB" checked>
+		<label for="cb-devweb">Desenvolvimento Web</label> <br>
+
+		<input type="checkbox" name="disciplinas-favoritas" id="cb-poo" value="POO" checked>
+		<label for="cb-poo">Programação Orientada a Objetos</label> <br>
+
+		<input type="checkbox" name="disciplinas-favoritas" id="cb-bd" value="BD">
+		<label for="cb-bd">Banco de Dados</label> <br>
+
+		Selecione a melhor forma de contato: <br>
+		<input type="radio" name="contato" id="ra-zap" value="ZAP">
+		<label for="ra-zap">Whatsapp</label> <br>
+
+		<input type="radio" name="contato" id="ra-instagram" value="Instagram">
+		<label for="ra-instagram">Instagram</label> <br>
+
+		<input type="radio" name="contato" id="ra-telefone" value="Telefone">
+		<label for="ra-telefone">Telefone</label> <br>
+
+		<input type="radio" name="contato" id="ra-email" value="Email" checked>
+		<label for="ra-email">E-mail</label> <br>
+
+		Selecione o semestre de início do curso: <br>
+		<input type="radio" name="semestre-inicio" id="ra-primeiro" value="1" checked>
+		<label for="ra-primeiro">Primeiro semestre</label> <br>
+
+		<input type="radio" name="semestre-inicio" id="ra-segundo" value="2">
+		<label for="ra-segundo">Segundo semestre</label> <br>
+
+		<br>
+		<input type="button" value="Botão do tipo button">
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</form>
+</body>
+</html>
